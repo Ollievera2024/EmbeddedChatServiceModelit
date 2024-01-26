@@ -4,7 +4,7 @@
         <title>Embedded Service Chat</title>
     </head>
     <body>
-        <h1 style="color: rgb(0, 0, 0);">Modelit</h1>
+        <h1 style="color: rgb(69, 72, 161);">Modelit</h1>
         <style type='text/css'>
             .embeddedServiceHelpButton .helpButton .uiButton {
                 background-color: #005290;
@@ -19,7 +19,7 @@
         <script type='text/javascript'>
             var initESW = function(gslbBaseURL) {
                 embedded_svc.settings.displayHelpButton = true; //Or false
-                embedded_svc.settings.language = 'en'; //For example, enter 'en' or 'en-US'
+                embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
         
                 //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
                 //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -40,17 +40,17 @@
                 embedded_svc.settings.entryFeature = 'LiveAgent';
         
                 embedded_svc.init(
+                    'https://modelit-e2-dev-ed.develop.my.salesforce.com',
                     'https://modelit-e2-dev-ed.develop.my.site.com/chatbot',
-                    'https://modelit-e2-dev-ed.develop.my.site.com/vforcesite',
                     gslbBaseURL,
                     '00Dan000000Fx4b',
-                    'Embedded_Service_with_Bot',
+                    'FINAL',
                     {
                         baseLiveAgentContentURL: 'https://c.la1-core1.sfdc-8tgtt5.salesforceliveagent.com/content',
                         deploymentId: '572an000000G7FF',
                         buttonId: '573an0000002D4P',
                         baseLiveAgentURL: 'https://d.la1-core1.sfdc-8tgtt5.salesforceliveagent.com/chat',
-                        eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04Ian0000000CIvEAM_18d431a8693',
+                        eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04Ian0000000CafEAE_18d439cf537',
                         isOfflineSupportEnabled: true
                     }
                 );
@@ -67,6 +67,5 @@
                 initESW('https://service.force.com');
             }
         </script>
-</script>
     </body>
 </html>
